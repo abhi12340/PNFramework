@@ -29,6 +29,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EFAEA49D24C98E4C00999027 /* Interface */ = {
+			isa = PBXGroup;
+			children = (
+				EFE0CCA624C96F4D00745820 /* PAService.swift */,
+			);
+			path = Interface;
+			sourceTree = "<group>";
+		};
 		EFE0CC9124C96F3D00745820 = {
 			isa = PBXGroup;
 			children = (
@@ -48,9 +56,9 @@
 		EFE0CC9D24C96F3D00745820 /* PNFramework */ = {
 			isa = PBXGroup;
 			children = (
+				EFAEA49D24C98E4C00999027 /* Interface */,
 				EFE0CC9E24C96F3D00745820 /* PNFramework.h */,
 				EFE0CC9F24C96F3D00745820 /* Info.plist */,
-				EFE0CCA624C96F4D00745820 /* PAService.swift */,
 			);
 			path = PNFramework;
 			sourceTree = "<group>";
