@@ -10,6 +10,6 @@ Pod::Spec.new do |spec|
   spec.author       = { "Abhishek Kumar" => "abhishekkumarthakur786@gmail.com"}
   spec.platform     = :ios, "13.0"
   spec.source       = { :git => "https://github.com/abhi12340/PNFramework.git", :tag => "1.0.0" }
-  spec.source_files  = "PNFramework/**/*"
+  spec.source_files  = "PNFramework/**/*.swift"
   spec.swift_version = "5.0"
 end
