@@ -1,0 +1,16 @@
+PODS:
+  - PNFramework (1.0.0)
+
+DEPENDENCIES:
+  - PNFramework (from `~/Desktop/PushNotificationDemo/PNFramework/PNFramework`)
+
+EXTERNAL SOURCES:
+  PNFramework:
+    :path: "~/Desktop/PushNotificationDemo/PNFramework/PNFramework"
+
+SPEC CHECKSUMS:
+  PNFramework: be69649776682d332149801bbe0b77093953526b
+
+PODFILE CHECKSUM: 05f30871fda594cd0e543127947e8e2cac914fb7
+
+COCOAPODS: 1.9.3
