@@ -12,8 +12,8 @@ public class PAService {
     
     private init(){}
     
-    public static func getService() -> Bool{
-        return true
+    public static func getService() -> String{
+        return "Hi there Abhishek ur pod is active"
     }
     
 }
