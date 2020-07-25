@@ -1,0 +1,16 @@
+PODS:
+  - PNFramework (2.0.0)
+
+DEPENDENCIES:
+  - PNFramework (= 2.0.0)
+
+SPEC REPOS:
+  trunk:
+    - PNFramework
+
+SPEC CHECKSUMS:
+  PNFramework: 9092a96b0cc3e3d28f5bac0ae2423ab8b6d4f28c
+
+PODFILE CHECKSUM: 56c0cc8eb1ae0fe695fd4d1f9abf8f5f8d54460c
+
+COCOAPODS: 1.9.3

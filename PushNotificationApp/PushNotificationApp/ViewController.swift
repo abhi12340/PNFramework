@@ -1,20 +1,18 @@
 //
 //  ViewController.swift
-//  TestApp
+//  PushNotificationApp
 //
-//  Created by Abhishek Kumar on 23/07/20.
+//  Created by Abhishek Kumar on 24/07/20.
 //  Copyright © 2020 Abhishek. All rights reserved.
 //
 
 import UIKit
-import PNFramework
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        PAService.sharedInstance.subscribe()
     }
 
 

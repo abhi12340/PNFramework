@@ -1,6 +1,6 @@
 {
   "name": "PNFramework",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "summary": "Apple Notification Framework using APNS.",
   "description": "Demo Project for the Apple Notification using APNS In IOS",
   "homepage": "https://github.com/abhi12340/PNFramework",
@@ -13,9 +13,12 @@
   },
   "source": {
     "git": "https://github.com/abhi12340/PNFramework.git",
-    "tag": "1.0.0"
+    "tag": "2.0.0"
   },
   "source_files": "PNFramework/**/*.swift",
   "swift_versions": "5.0",
+  "ios": {
+    "frameworks": "UIKit"
+  },
   "swift_version": "5.0"
 }

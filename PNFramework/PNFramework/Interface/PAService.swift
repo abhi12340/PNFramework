@@ -7,13 +7,70 @@
 //
 
 import Foundation
+import UserNotifications
+import UIKit
+
+enum Permission {
+    case granted
+    case denied
+}
 
 public class PAService {
     
-    private init(){}
+    //MARK:- public sharedInstance variable
     
-    public static func getService() -> String{
-        return "Hi there Abhishek ur pod is active"
+    public static let sharedInstance = PAService()
+    
+    //MARK:- private variables
+    
+    private(set) var status : Permission?
+    private(set) var deviceToken : String?
+    
+    //MARK:- Initializer
+    private init() {
+        setPermission()
     }
     
+    //MARK:- public methods
+    
+    public func getPermission() -> Bool {
+        guard let notificationStatus = status , case .granted = notificationStatus else {
+            return false
+        }
+        return true
+    }
+    
+    public func subscribe() {
+        if getPermission() {
+            DispatchQueue.main.async {
+                UIApplication.shared.registerForRemoteNotifications()
+            }
+        }
+    }
+    
+    public func getSubscriptionToken() -> String? {
+        guard let token = deviceToken else {
+            return nil
+        }
+        return token
+    }
+    
+    public func setSubscriptionToken(token : String?) {
+        deviceToken = token
+    }
+    
+    public func getSubscriptionStatus() -> Bool {
+        return UIApplication.shared.isRegisteredForRemoteNotifications
+    }
+    
+    //MARK:- private method
+    
+    private func setPermission() {
+        UNUserNotificationCenter.current()
+        .requestAuthorization(options: [.alert, .sound, .badge]) {
+          [weak self] (granted, error) in
+            self?.status = granted ? .granted : .denied
+        }
+    }
 }
+

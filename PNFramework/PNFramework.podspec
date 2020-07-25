@@ -12,4 +12,5 @@ Pod::Spec.new do |spec|
   spec.source       = { :git => "https://github.com/abhi12340/PNFramework.git", :tag => "#{spec.version}" }
   spec.source_files  = "PNFramework/**/*.swift"
   spec.swift_version = "5.0"
+  spec.ios.framework = "UIKit"
 end

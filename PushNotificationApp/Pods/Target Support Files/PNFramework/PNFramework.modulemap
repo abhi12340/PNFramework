@@ -1,0 +1,6 @@
+framework module PNFramework {
+  umbrella header "PNFramework-umbrella.h"
+
+  export *
+  module * { export * }
+}
