@@ -2,7 +2,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "PNFramework"
-  spec.version      = "2.0.0"
+  spec.version      = "3.0.0"
   spec.summary      = "Apple Notification Framework using APNS."
   spec.description  = "Demo Project for the Apple Notification using APNS In IOS"
   spec.homepage     = "https://github.com/abhi12340/PNFramework"
