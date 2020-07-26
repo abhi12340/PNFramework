@@ -25,6 +25,7 @@ public class PAService {
     
     private(set) var status : Permission?
     private(set) var deviceToken : String?
+    private(set) var notificationInfo : [String : Any]?
     
     //MARK:- Initializer
     private init() {
@@ -32,6 +33,14 @@ public class PAService {
     }
     
     //MARK:- public methods
+    
+    public func setNotification(info data : [String : Any]) {
+        notificationInfo = data
+    }
+    
+    public func getNotificationInfo() -> [String : Any]? {
+        return notificationInfo
+    }
     
     public func getPermission() -> Bool {
         guard let notificationStatus = status , case .granted = notificationStatus else {

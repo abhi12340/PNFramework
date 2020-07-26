@@ -1,16 +1,16 @@
 PODS:
-  - PNFramework (3.0.0)
+  - PNFramework (4.0.0)
 
 DEPENDENCIES:
-  - PNFramework (= 3.0.0)
+  - PNFramework (= 4.0.0)
 
 SPEC REPOS:
   trunk:
     - PNFramework
 
 SPEC CHECKSUMS:
-  PNFramework: 5e47d9db5e822c6358cc0ae1ad0f3290ffc57479
+  PNFramework: 1a07ddae0697ce22b5eb35fef5044eff745c5837
 
-PODFILE CHECKSUM: 9634522c12d068f1ce53fd0d8c8e969cfd71cafd
+PODFILE CHECKSUM: 50bf9c21672bf7169eae4afdfa26d3b76ee77cfb
 
 COCOAPODS: 1.9.3

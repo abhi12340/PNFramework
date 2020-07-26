@@ -76,7 +76,7 @@ class ViewController: UIViewController {
     }
     
     func clickSubscribe() {
-        PAService.sharedInstance.subscribe()
+        pnService.subscribe()
         updateInfoUI()
     }
     

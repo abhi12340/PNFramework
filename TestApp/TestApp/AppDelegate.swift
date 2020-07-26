@@ -12,7 +12,7 @@ import PNFramework
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-    var deviceToken : String?
+    var paService = PAService.sharedInstance
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
@@ -37,7 +37,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application( _ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
         let tokenParts = deviceToken.map { data in String(format: "%02.2hhx", data) }
         let token = tokenParts.joined()
-        PAService.sharedInstance.setSubscriptionToken(token: token)
+        paService.setSubscriptionToken(token: token)
         print("Device Token: \(token)")
     }
 
@@ -48,7 +48,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didReceiveRemoteNotification userInfo: [AnyHashable : Any]) {
         print("Received push notification: \(userInfo)")
         if let aps = userInfo["aps"] as? [String: Any] {
-            PAService.sharedInstance.setNotification(info: aps)
+            paService.setNotification(info: aps)
         }
     }
 }
