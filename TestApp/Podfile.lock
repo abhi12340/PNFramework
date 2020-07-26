@@ -1,5 +1,5 @@
 PODS:
-  - PNFramework (2.0.0)
+  - PNFramework (3.0.0)
 
 DEPENDENCIES:
   - PNFramework (from `~/Desktop/PushNotificationDemo/PNFramework/PNFramework`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "~/Desktop/PushNotificationDemo/PNFramework/PNFramework"
 
 SPEC CHECKSUMS:
-  PNFramework: c4f3dab6d9d80e218de6e120c6c3e5ea441d910b
+  PNFramework: 5e47d9db5e822c6358cc0ae1ad0f3290ffc57479
 
 PODFILE CHECKSUM: 05f30871fda594cd0e543127947e8e2cac914fb7
 

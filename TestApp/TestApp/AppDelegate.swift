@@ -16,7 +16,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-//        registerForPushNotifications()
         return true
     }
 
@@ -33,15 +32,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // If any sessions were discarded while the application was not running, this will be called shortly after application:didFinishLaunchingWithOptions.
         // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
     }
-    
-    func registerForPushNotifications() {
-      UNUserNotificationCenter.current()
-        .requestAuthorization(options: [.alert, .sound, .badge]) {
-          granted, error in
-            PAService.sharedInstance.subscribe()
-            print(PAService.sharedInstance.getPermission())
-        }
-    }
+
 
     func application( _ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
         let tokenParts = deviceToken.map { data in String(format: "%02.2hhx", data) }
@@ -57,7 +48,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didReceiveRemoteNotification userInfo: [AnyHashable : Any]) {
         print("Received push notification: \(userInfo)")
         if let aps = userInfo["aps"] as? [String: Any] {
-            print("\(aps)")
+            PAService.sharedInstance.setNotification(info: aps)
         }
     }
 }

@@ -3,17 +3,18 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		24F34408073516D35E0BC703893BCB04 /* PNFramework-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F54C322EF540BDEDFEACE64F11B531CB /* PNFramework-dummy.m */; };
-		3CE578AC4581A87D2631BB40193089E2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		557E6DFB4CFB33DB092A47C3D9A2570C /* PNFramework-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C2110DC62596F05E1D2C9EB6914762A /* PNFramework-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		06CA12621DD6B88D79C9BD790439DD4C /* PAService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9365AD91A5F16059197BD413EF826B46 /* PAService.swift */; };
+		261283E90DCC64321B2DF49F1E34FDA9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 436BAA54A31999B53B3CC7115C55FE50 /* Foundation.framework */; };
+		3CE578AC4581A87D2631BB40193089E2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 436BAA54A31999B53B3CC7115C55FE50 /* Foundation.framework */; };
+		53BFBBC62AB0DB14BCEED615EF191391 /* PNFramework-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F54C322EF540BDEDFEACE64F11B531CB /* PNFramework-dummy.m */; };
+		654DB13D9E81FD1FBC5B3FA98CAA8293 /* PNFramework-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C2110DC62596F05E1D2C9EB6914762A /* PNFramework-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		73A56C2989311F209D258AA5C281E5E7 /* Pods-PushNotificationApp-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B54942EA51C1F089D336901922ADD31C /* Pods-PushNotificationApp-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C3017C4AC2950022D3DCC04D24214A4E /* Pods-PushNotificationApp-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 06E03262F9BD44DB3888D251CA074B78 /* Pods-PushNotificationApp-dummy.m */; };
-		CED30D36AF1F5451881E1347C6204EE2 /* PAService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9365AD91A5F16059197BD413EF826B46 /* PAService.swift */; };
-		D0B62F3E280335E0D7BA7D02AD335E2A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		CF3F2776CA218D2EA7384B18B31A7274 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 312B988EF117AE4DE76A268D970131FE /* UIKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,8 +32,9 @@
 		184AAF3DE14AD8A3BC0BC309CDE03A85 /* Pods-PushNotificationApp-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PushNotificationApp-acknowledgements.plist"; sourceTree = "<group>"; };
 		2C2110DC62596F05E1D2C9EB6914762A /* PNFramework-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PNFramework-umbrella.h"; sourceTree = "<group>"; };
 		2CFCF88977CBAD319ED578B99DD87D04 /* Pods-PushNotificationApp-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PushNotificationApp-frameworks.sh"; sourceTree = "<group>"; };
-		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		312B988EF117AE4DE76A268D970131FE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		39BBD94E9DA12A5DA12E24D22B6822C6 /* PNFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = PNFramework.framework; path = PNFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		436BAA54A31999B53B3CC7115C55FE50 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		438FC570C8545F3CA55CC7E04A3DB6B5 /* Pods_PushNotificationApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_PushNotificationApp.framework; path = "Pods-PushNotificationApp.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		60A682FB9693045D276AC4C697D6DD34 /* PNFramework-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "PNFramework-Info.plist"; sourceTree = "<group>"; };
 		679AF05C613B10162B35A8B65AF00C27 /* PNFramework.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = PNFramework.modulemap; sourceTree = "<group>"; };
@@ -59,17 +61,26 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D379704D2745BFF7637242D934D11CED /* Frameworks */ = {
+		ECF475FF6EECD0C771671A0DD385DC25 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D0B62F3E280335E0D7BA7D02AD335E2A /* Foundation.framework in Frameworks */,
+				261283E90DCC64321B2DF49F1E34FDA9 /* Foundation.framework in Frameworks */,
+				CF3F2776CA218D2EA7384B18B31A7274 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E2983683FD097A93297E2F5D4E382B36 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		2235B5E4569BD9485DD90AC56BB7E807 /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -122,31 +133,24 @@
 			path = "Target Support Files/Pods-PushNotificationApp";
 			sourceTree = "<group>";
 		};
-		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */,
-			);
-			name = iOS;
-			sourceTree = "<group>";
-		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */,
 				479B7192BB93FC63E2ABFDA8EE3F2A16 /* Pods */,
 				2235B5E4569BD9485DD90AC56BB7E807 /* Products */,
 				290A95B6026BE577E5CD76AA92EF4B59 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+		E2983683FD097A93297E2F5D4E382B36 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				C0834CEBB1379A84116EF29F93051C60 /* iOS */,
+				436BAA54A31999B53B3CC7115C55FE50 /* Foundation.framework */,
+				312B988EF117AE4DE76A268D970131FE /* UIKit.framework */,
 			);
-			name = Frameworks;
+			name = iOS;
 			sourceTree = "<group>";
 		};
 		EBC8D05D8E0EAF5C88F118AC1EE6C856 /* Support Files */ = {
@@ -167,11 +171,11 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		21F78A8B534346E81AAFE34788547254 /* Headers */ = {
+		5F27996300459C0F8E08F6AB3DCEE2DC /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				557E6DFB4CFB33DB092A47C3D9A2570C /* PNFramework-umbrella.h in Headers */,
+				654DB13D9E81FD1FBC5B3FA98CAA8293 /* PNFramework-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -188,12 +192,12 @@
 /* Begin PBXNativeTarget section */
 		38551108B99AA00BC43F4A52041951AB /* PNFramework */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9DACEE0470C9462C90A97B6D04DBCF82 /* Build configuration list for PBXNativeTarget "PNFramework" */;
+			buildConfigurationList = 98E3C653049516B37F2F37F78F9D1EBC /* Build configuration list for PBXNativeTarget "PNFramework" */;
 			buildPhases = (
-				21F78A8B534346E81AAFE34788547254 /* Headers */,
-				504459F17342B9272250F9749C006CD6 /* Sources */,
-				D379704D2745BFF7637242D934D11CED /* Frameworks */,
-				8B896DCD91DD0C31714E8E746F408F5A /* Resources */,
+				5F27996300459C0F8E08F6AB3DCEE2DC /* Headers */,
+				FEC3031B7B043B8EC19598BAA8976E3D /* Sources */,
+				ECF475FF6EECD0C771671A0DD385DC25 /* Frameworks */,
+				5E4243184263241A8AB7C32AE617D434 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -233,7 +237,7 @@
 				LastUpgradeCheck = 1100;
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 10.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -259,7 +263,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8B896DCD91DD0C31714E8E746F408F5A /* Resources */ = {
+		5E4243184263241A8AB7C32AE617D434 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -269,20 +273,20 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		504459F17342B9272250F9749C006CD6 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				CED30D36AF1F5451881E1347C6204EE2 /* PAService.swift in Sources */,
-				24F34408073516D35E0BC703893BCB04 /* PNFramework-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		68BEBD2D813F1AED08BB0621ECC3818B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				C3017C4AC2950022D3DCC04D24214A4E /* Pods-PushNotificationApp-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FEC3031B7B043B8EC19598BAA8976E3D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				06CA12621DD6B88D79C9BD790439DD4C /* PAService.swift in Sources */,
+				53BFBBC62AB0DB14BCEED615EF191391 /* PNFramework-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -298,43 +302,7 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		1523A8D36DC61F4722928009DC839C06 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = D6C838D2C9B5FAF89352EC441FEDF4A1 /* PNFramework.debug.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/PNFramework/PNFramework-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/PNFramework/PNFramework-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/PNFramework/PNFramework.modulemap";
-				PRODUCT_MODULE_NAME = PNFramework;
-				PRODUCT_NAME = PNFramework;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		510B057D2E9F059C50D52DA5D90F3ACF /* Release */ = {
+		1422B121EAEAEA11307496903FA623C6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -382,7 +350,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -394,7 +362,44 @@
 			};
 			name = Release;
 		};
-		5CE1784E02EC95836BF9135AFF911DA8 /* Debug */ = {
+		163F1B5D768E46488EB18A726BF6C79C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A221D8FE78130DC2CDA36C467B8E0E8D /* PNFramework.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/PNFramework/PNFramework-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/PNFramework/PNFramework-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/PNFramework/PNFramework.modulemap";
+				PRODUCT_MODULE_NAME = PNFramework;
+				PRODUCT_NAME = PNFramework;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		6311DD58479A4C3ACA62CAF3FD57609E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = DC8BE9D4FEF570860B61D41A9C363C52 /* Pods-PushNotificationApp.debug.xcconfig */;
 			buildSettings = {
@@ -411,7 +416,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-PushNotificationApp/Pods-PushNotificationApp-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -432,7 +437,82 @@
 			};
 			name = Debug;
 		};
-		804E13245C9FBBE6A340C555CA8B2B4C /* Debug */ = {
+		68D04FCDE15904C6C9DEA22F0EA4F7E5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F015A4E9BA510E64AF205F949B2C1281 /* Pods-PushNotificationApp.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-PushNotificationApp/Pods-PushNotificationApp-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-PushNotificationApp/Pods-PushNotificationApp.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8D2394DAB0094573108D78D92B0617E3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D6C838D2C9B5FAF89352EC441FEDF4A1 /* PNFramework.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/PNFramework/PNFramework-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/PNFramework/PNFramework-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/PNFramework/PNFramework.modulemap";
+				PRODUCT_MODULE_NAME = PNFramework;
+				PRODUCT_NAME = PNFramework;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		ED7888FA6713EABBF66D26A8003AD1CA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -483,7 +563,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -496,90 +576,14 @@
 			};
 			name = Debug;
 		};
-		A287E661EF6CE2F21E334311AB5C5A94 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = F015A4E9BA510E64AF205F949B2C1281 /* Pods-PushNotificationApp.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-PushNotificationApp/Pods-PushNotificationApp-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-PushNotificationApp/Pods-PushNotificationApp.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		F984764BCB1E1353809E9294EDA9A255 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = A221D8FE78130DC2CDA36C467B8E0E8D /* PNFramework.release.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/PNFramework/PNFramework-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/PNFramework/PNFramework-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/PNFramework/PNFramework.modulemap";
-				PRODUCT_MODULE_NAME = PNFramework;
-				PRODUCT_NAME = PNFramework;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
 		2E66AB7205A60872DB683BF52EE853C4 /* Build configuration list for PBXNativeTarget "Pods-PushNotificationApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				5CE1784E02EC95836BF9135AFF911DA8 /* Debug */,
-				A287E661EF6CE2F21E334311AB5C5A94 /* Release */,
+				6311DD58479A4C3ACA62CAF3FD57609E /* Debug */,
+				68D04FCDE15904C6C9DEA22F0EA4F7E5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -587,17 +591,17 @@
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				804E13245C9FBBE6A340C555CA8B2B4C /* Debug */,
-				510B057D2E9F059C50D52DA5D90F3ACF /* Release */,
+				ED7888FA6713EABBF66D26A8003AD1CA /* Debug */,
+				1422B121EAEAEA11307496903FA623C6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9DACEE0470C9462C90A97B6D04DBCF82 /* Build configuration list for PBXNativeTarget "PNFramework" */ = {
+		98E3C653049516B37F2F37F78F9D1EBC /* Build configuration list for PBXNativeTarget "PNFramework" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1523A8D36DC61F4722928009DC839C06 /* Debug */,
-				F984764BCB1E1353809E9294EDA9A255 /* Release */,
+				8D2394DAB0094573108D78D92B0617E3 /* Debug */,
+				163F1B5D768E46488EB18A726BF6C79C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
