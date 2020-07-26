@@ -13,7 +13,16 @@ class ViewController: UIViewController {
     
     let showStatusButton : UIButton = {
         $0.backgroundColor = .systemBlue
-        $0.setTitle(" Show Status ", for: .normal)
+        $0.setTitle(" Status ", for: .normal)
+        $0.setTitleColor(.white, for: .normal)
+        $0.translatesAutoresizingMaskIntoConstraints = false
+        $0.addTarget(self, action: #selector(statusButtonAction(_:)), for: .touchUpInside)
+        return $0
+    }(UIButton())
+    
+    let subscribeButton : UIButton = {
+        $0.backgroundColor = .systemBlue
+        $0.setTitle(" Subcribe ", for: .normal)
         $0.setTitleColor(.white, for: .normal)
         $0.translatesAutoresizingMaskIntoConstraints = false
         $0.addTarget(self, action: #selector(statusButtonAction(_:)), for: .touchUpInside)
@@ -25,7 +34,7 @@ class ViewController: UIViewController {
         $0.layer.borderColor = UIColor.black.cgColor
         $0.textColor = .black
         $0.backgroundColor = .white
-        $0.text = " Permission "
+        $0.text = " Permission Information. "
         $0.translatesAutoresizingMaskIntoConstraints = false
         return $0
     }(UILabel())
@@ -38,7 +47,7 @@ class ViewController: UIViewController {
     }
     
     func setupView() {
-        let stackView = UIStackView(arrangedSubviews: [showStatusButton , permissionLabel])
+        let stackView = UIStackView(arrangedSubviews: [permissionLabel ,subscribeButton,showStatusButton])
         stackView.axis = .vertical
         stackView.distribution = .fillEqually
         stackView.alignment = .center
@@ -48,16 +57,36 @@ class ViewController: UIViewController {
         NSLayoutConstraint.activate([stackView.topAnchor.constraint(equalTo: view.topAnchor, constant: 80),
                                      stackView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
                                      stackView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
-                                     stackView.heightAnchor.constraint(equalToConstant: 100)])
+                                     stackView.heightAnchor.constraint(equalToConstant: 150)])
     }
     
     @objc func statusButtonAction(_ sender : UIButton) {
-        DispatchQueue.main.async { [weak self] in
-            guard let servicePermission = self?.pnService else {
-                return
-            }
-            let regStatus = servicePermission.getSubscriptionStatus() ? "sub" : "non-sub "
-            self?.permissionLabel.text =  servicePermission.getPermission() ? " perm :- Granted & Reg status :- \(regStatus)" : "Failed"
+        switch sender {
+        case showStatusButton:
+            statusButtonClicked()
+        case subscribeButton:
+            clickSubscribe()
+        default:
+            break
+        }
+    }
+    
+    func statusButtonClicked() {
+        updateInfoUI()
+    }
+    
+    func clickSubscribe() {
+        PAService.sharedInstance.subscribe()
+        updateInfoUI()
+    }
+    
+    func updateInfoUI() {
+     DispatchQueue.main.async { [weak self] in
+        guard let servicePermission = self?.pnService else {
+            return
+        }
+        let regStatus = servicePermission.getSubscriptionStatus() ? "sub" : "non-sub "
+        self?.permissionLabel.text =  servicePermission.getPermission() ? " perm :- Granted & Reg status :- \(regStatus)" : " Failed "
         }
     }
 }

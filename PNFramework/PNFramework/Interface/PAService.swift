@@ -79,7 +79,6 @@ public class PAService {
         .requestAuthorization(options: [.alert, .sound, .badge]) {
           [weak self] (granted, error) in
             self?.status = granted ? .granted : .denied
-            self?.subscribe()
         }
     }
 }
